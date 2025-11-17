@@ -7,16 +7,6 @@
 > Pontificia Universidad Javeriana  
 > Departamento de Ingeniería de Sistemas
 
-Estructura Repositorio
-├── README.md
-├── controlador.c
-├── agente.c
-├── Makefile
-├── test_suite.sh
-├── SO_DocProyecto.PDF
-├── solicitudes_ejemplo1.csv
-├── solicitudes_ejemplo2.csv
-└── solicitudes_ejemplo3.csv
 
 Sistema concurrente de gestión de reservas para el Parque Berlín, implementado en C utilizando procesos POSIX, hilos (threads), pipes nominales (FIFOs) y mecanismos de sincronización mediante mutex.
 
