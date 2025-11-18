@@ -134,7 +134,7 @@ En una terminal, ejecuta:
 
 En otra(s) terminal(es), ejecuta:
 
-./agente -s AgenteA -a examples/solicitudes_ejemplo1.csv -p pipe_control
+./agente -s AgenteA -a solicitudes_ejemplo1.csv -p pipe_control
 
 **Parámetros**:
 - `-s AgenteA`: Nombre identificador del agente
@@ -164,25 +164,13 @@ Rodriguez,15,4
 ./controlador -i 7 -f 19 -s 5 -t 20 -p pipe_control
 
 **Terminal 2 - Agente A**:
-./agente -s AgenciaCentro -a examples/solicitudes_ejemplo1.csv -p pipe_control
-
+./agente -s AgenciaCentro -a solicitudes_ejemplo1.csv -p pipe_control
 
 **Terminal 3 - Agente B**:
-./agente -s AgenciaNorte -a examples/solicitudes_ejemplo2.csv -p pipe_control
+./agente -s AgenciaNorte -a solicitudes_ejemplo2.csv -p pipe_control
 
-### Ejemplo 2: Prueba de Aforo Máximo
 
-Archivo `solicitudes_aforo.csv`:
-Familia_Grande_1,8,15
-Familia_Grande_2,8,10
-Familia_Pequeña,8,3
-
-En este caso:
-- Primera familia: **Aprobada** (15 personas, aforo disponible: 20)
-- Segunda familia: **Reprogramada** (10 personas exceden el aforo restante de 5)
-- Tercera familia: **Reprogramada** (no hay cupo en hora 8)
-
-### Ejemplo 3: Solicitudes Extemporáneas
+### Ejemplo 2: Solicitudes Extemporáneas
 
 Si la hora actual del sistema es 10:00 y se solicita hora 8:00, el sistema:
 1. Detecta que es extemporánea
@@ -198,10 +186,10 @@ Si la hora actual del sistema es 10:00 y se solicita hora 8:00, el sistema:
 El proyecto incluye una suite de 10 casos de prueba automatizados:
 
 Dar permisos de ejecución
-chmod +x tests/test_suite.sh
+chmod +x test_suite.sh
 
 Ejecutar todas las pruebas
-./tests/test_suite.sh
+./test_suite.sh
 
 ### Casos de Prueba Incluidos
 
